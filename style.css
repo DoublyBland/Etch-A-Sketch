@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#grid-container {
+    display: flex;
+    height: 480px;
+    width: 480px;
+    border: 10px;
+    border-color: black;
+    border-style: solid;
+    
+}
+
+#grid-container div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+#grid-container div div {
+    flex: 1;
+    text-align: center;
+    border-color: black;
+    border-style: solid;
+    border-collapse: collapse;
+}
+
+.colorize {
+    background-color: black;
+}
