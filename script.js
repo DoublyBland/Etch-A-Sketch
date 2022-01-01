@@ -29,7 +29,23 @@ function resetGrid(){
 }
 
 function colorize(square) {
-    square.classList.add("colorize");
+    let colorChoice = document.getElementsByClassName("selection");
+    if(colorChoice[0]){
+    if (colorChoice[0].classList.contains("normal")){
+        square.style.backgroundColor = "black";
+    }
+    else if (colorChoice[0].classList.contains("colorful")){
+        const randomColor = Math.floor(Math.random()*16777215).toString(16);
+        square.style.backgroundColor = "#" + randomColor;
+    }
+    else if (colorChoice[0].classList.contains("shade")){
+        square.style.backgroundColor = "hsl(0,0%,50%)";
+    }
+}
+    else {
+        square.style.backgroundColor = "black";
+    }
+
     return;
 }
 
