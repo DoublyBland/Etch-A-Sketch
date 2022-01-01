@@ -4,6 +4,10 @@ body {
     align-items: center;
 }
 
+button {
+    margin-bottom: 32px;
+}
+
 
 #grid-container {
     display: flex;
@@ -25,9 +29,9 @@ body {
 #grid-container div div {
     flex: 1;
     text-align: center;
-    border-color: black;
+   /* border-color: black;
     border-style: solid;
-    border-collapse: collapse;
+    border-collapse: collapse;*/
 }
 
 .colorize {
